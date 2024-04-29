@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="fundoEscuro"></div>
+  <div class="menu__btn-wrapper">
+    <div class="menu__btn">
+      <span></span>
+    </div> 
+  </div>
+  <main class="columns js-scroll" id="sobre" v-scrollanimation>
+    <div class="sidebar">
+      <div class="sidebar__conteudo">
+        <div class="icone">
+          <img src="./assets/img/icone.png" alt="">
+        </div>
+        <nav class="menu">
+          <ul class="menu__lista">
+            <li class="menu__item"><a href="#sobre" class="menu__link">Sobre</a></li>
+            <li class="menu__item" ><a href="#projetos" class="menu__link">Projetos</a></li>
+            <li class="menu__item"><a href="#contato" class="menu__link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <!-- https://codepen.io/tigercodes/pen/NWjZyVR -->
+    </div>
+    <div class="columns__right">
+      <section>
+        <div class="title">
+          <h1 class="title__t1">Olá, seja bem-vindo(a) 👋 </h1>
+          <span class="title__t2">Eu sou Jaqueline Moura :)</span>
+          <p class="title__t3">Desenvolvedora Front-End</p>
+          <p class="text">
+            Sou formada em Análise e desenvolvimento de sistemas e já atuei na área de e-commerce.
+            Possuo experiência em Vue js, Vuex, Javascript, consumo de APIs REST.
+            Nessa página você vai encontrar meus projetos pessoais, minhas habilidades e minhas informações de contato.
+          </p>
+        </div>
+      </section>
+  
+      <section class="projetos js-scroll" id="projetos" >
+        <h2 class="portfolio__t1">Projetos</h2>
+        <div class="projeto__item">
+          <div class="projetos__video-wrapper">
+            <div class="projetos__video">
+              <video src="./assets/video/english.mp4"
+                controls
+                >
+              </video>
+            </div>
+          </div>
+              
+          <h3 class="projetos__t2">English cards</h3>
+          <p class="projetos__t3">
+            English cards é uma aplicação feita para estudar e praticar inglês. 
+            A ideia desse projeto pessoal surgiu após utilizar sites de flashcards que limitava
+            a quantidade de cards por dia no plano gratuito, a partir disso decidi fazer o meu próprio.
+            <br>Atualmente só tem a opção de traduzir do português para inglês pois identifiquei que
+            consigo fixar melhor o aprendizado escrevendo/digitando. Portanto a aplicação cumpre com a minha necessidade, mas desejo aprimorar ao decorrer do tempo.
+            <br>
+            <br>
+            Utilizei o vue router para manipulação de rotas passando propriedades para criá-lo de forma dinâmica.
+          </p>
+          <div class="projetos__links">
+            <a href="https://jaquemoura.github.io/english-cards/" target="_blank">Site</a>
+            <a href="https://github.com/jaquemoura/english-cards" target="_blank">Repositório</a>
+          </div>
+        </div>
+  
+        <div class="projeto__item">
+          <div class="projetos__video-wrapper">
+            <div class="projetos__video">
+              <video src="./assets/video/menu.mp4"
+              controls
+              >
+              </video>
+            </div>
+          </div>
+          <h3 class="projetos__t2">Menu de ecommerce</h3>
+          <p class="projetos__t3">
+            Ao trabalhar com menus de e-commerces recursivos de vários níveis, sentia dificuldade em estilizar
+            sobrepondo classes sobre classes. Então resolvi desmembrar um menu e fazer o meu próprio separando em componente, para entender melhor como funciona.
+            Deu um pouco de trabalho, mas hoje consigo lidar com mais facilidade.
+            Não é recursivo, porém em breve pretendo fazer um recursivo e postá-lo
+            <br>
+            <br>
+            Utilizei eventos personalizados para fazer a comunicação entre componentes filhos e componentes pai, o que  ajudou na transição de item nível 1 para subitem no menu mobile.
+          </p>
+          <div class="projetos__links">
+            <a href="https://jaquemoura.github.io/menu-completo/" target="_blank">Site</a>
+            <a href="https://github.com/jaquemoura/menu-completo" target="_blank">Repositório</a>
+          </div>
+        </div>
+      </section>
+  
+      <section class="contato js-scroll" id="contato">
+        <h2 class="portfolio__t1">Contatos</h2>
+        <div class="contato__icons">
+          <div class="contato__box">
+            <a href="mailto:jaquelinemm1@hotmail.com" class="contato__link">
+              <div class="contato__img">
+                <img src="./assets/svg/mail.svg" alt="">
+              </div>
+              <span class="contato__title">E-mail</span>
+              <span class="contato__text">jaquelinemm1@hotmail.com</span>
+            </a>
+          </div>
+          <div class="contato__box">
+            <a href="https://api.whatsapp.com/send?phone=5518996942453" target="_blank" class="contato__link">
+              <div class="contato__img">
+                <img src="./assets/svg/phone.svg" alt="">
+              </div>
+              <span class="contato__title">Telefone</span>
+              <span class="contato__text">(18) 996942453</span>
+            </a>
+          </div>
+          <div class="contato__box">
+            <a href="https://www.linkedin.com/in/jaqueline-moura-780625195/" target="_blank" class="contato__link">
+              <div class="contato__img">
+                <img src="./assets/svg/linkedin.svg" alt="">
+              </div>
+              <span class="contato__title">Linkedin</span>
+              <span class="contato__text">Jaqueline Moura</span>
+            </a>
+          </div>
+          <div class="contato__box">
+            <a href="https://github.com/jaquemoura" target="_blank" class="contato__link">
+              <div class="contato__img">
+                <img src="./assets/svg/github.svg" alt="">
+              </div>
+              <span class="contato__title">Github</span>
+              <span class="contato__text">@jaquemoura</span>
+            </a>
+          </div>
+        </div>
+      </section>
+  
+    </div>
+  </main>
+  <script src="script.js"></script>  
+</body>
+</html>
